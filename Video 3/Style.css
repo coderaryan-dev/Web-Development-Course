@@ -1,0 +1,52 @@
+body {
+  background-image: url("Image2.jpg");
+  background-size: cover;       /* full screen cover */
+  background-position: center;  /* center align */
+  background-repeat: no-repeat; /* repeat na ho */
+  color: rgb(255, 255, 255);
+}
+img{
+    border-radius: 15%;
+}
+th{
+    border: 4px solid rgb(255, 0, 0);
+    text-decoration: underline;
+}
+h1{
+    text-decoration: overline;
+    color: rgb(255, 255, 255);
+}
+td{
+    border: 3px solid rgb(205, 255, 67);
+}
+ol{
+    border: 5px solid rgb(255, 149, 0);
+}
+ul{
+    border: 5px solid rgb(98, 255, 0);
+}
+li{
+    border: 4px solid rgb(139, 141, 223);
+}
+dd{
+    border: 4px solid rgb(0, 0, 255);;
+}
+dl{
+    border: 5px solid rgb(143, 12, 121);
+}
+dt{
+    border: 3.2px solid rgb(0, 191, 255);
+}
+span{
+    border: 5px solid rgb(255, 0, 0);
+}
+.sticky-footer {
+  position: sticky;
+  top: 0;
+  background-color: rgb(200, 117, 117);
+  border-radius: 100px;
+  text-align: center;
+  z-index: 1000;
+} 
+
+/* This is Alian language written by Aryan Singh*/
