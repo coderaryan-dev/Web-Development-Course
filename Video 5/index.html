@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on forms | Aryan Singh</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <h1>Form for hiring TA for Aryan dev.Academy</h1>
+    <form action="Submit.html" method="post">
+        <div>
+            <label for="Username">Enter Your User Name 👉</label>
+            <input type="text" name="username" placeholder="Enter Your User Name" id="Username" required>
+        </div>
+        <div>
+            <input type="radio" name="Gender" id="Male" value="Male">
+            <label for="Male"> Male</label>
+            <input type="radio" name="Gender" id="Female" value="Female">
+            <label for="Female"> Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Newsletter" id="Aryan">
+            <label for="Aryan">Subscribe Newsletter</label>
+        </div>
+        <div>
+            <textarea name="Textarea" id="texts" cols="40" rows="5" placeholder="Enter Your Text Hear"></textarea>
+            <br>
+            <label for="texts">Enter your Text Here</label>
+        </div>
+        <div>
+            <label for="Brand">Select Brand</label>
+            <br>
+            <select name="Car Brands" id="Brand">
+                <option value="BMW">BMW</option>
+                <option value="TOYOTA">TOYOTA</option>
+                <option value="MERCEDISE">MERCEDISE</option>
+                <option value="MARUTI SUZUKI">MARUTI SUZUKI</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</body>
+
+</html>
