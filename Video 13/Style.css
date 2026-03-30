@@ -1,0 +1,17 @@
+h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+ol {
+    background-color: rgba(122, 73, 213, 0.904);
+    color: white;
+}
+
+dl {
+    background-color: black;
+    color: white;
+}
+
+/* this is external CSS */
