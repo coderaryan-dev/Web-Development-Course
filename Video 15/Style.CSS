@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+.box{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.box1{
+    background-color: rebeccapurple;
+    height: 200px;
+    margin: 40px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+.box2{
+    background-color:rgb(255, 208, 0);
+    height: 200px;
+    margin: 40px;
+    padding: 20px;
+    border: 5px solid black;
+}
