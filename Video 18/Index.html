@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Specificity & Cascade | Aryan Singh</title>
+</head>
+ <style>
+    /* 🔹 1. Element selector (lowest priority) */
+    p {
+      color: blue;
+    }
+
+    /* 🔹 2. Class selector */
+    .text {
+      color: green;
+    }
+
+    /* 🔹 3. ID selector */
+    #unique {
+      color: orange;
+    }
+
+    /* 🔹 4. Same specificity → last rule wins (Cascade) */
+    .same {
+      color: purple;
+    }
+
+    .same {
+      color: red;
+    }
+
+    /* 🔹 5. !important (sabse powerful) */
+    .important {
+      color: pink !important;
+    }
+  </style>
+<body>
+    <h1>CSS Specificity & Cascade Demo</h1>
+
+  <!-- Example 1 -->
+  <p>This is normal paragraph (blue - element selector)</p>
+
+  <!-- Example 2 -->
+  <p class="text">This is class (green > blue)</p>
+
+  <!-- Example 3 -->
+  <p id="unique" class="text">ID wins (orange > green > blue)</p>
+
+  <!-- Example 4 -->
+  <p class="same">Same specificity → last one wins (red)</p>
+
+  <!-- Example 5 -->
+  <p class="important" style="color: black;">
+    !important wins (pink > inline black)
+  </p>
+
+</body>
+</html>
