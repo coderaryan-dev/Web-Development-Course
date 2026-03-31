@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:ital,wght@1,900&display=swap');
+
+p:first-child {
+    background-color: yellow;
+    color: red;
+    font-family: "Poppins", sans-serif;
+}
+
+p:nth-child(2),
+p:nth-child(3) {
+    background-color: blue;
+    color: white;
+    font-family: "Italiana", serif;
+    font-size: larger;
+    font-weight: bolder;
+}
