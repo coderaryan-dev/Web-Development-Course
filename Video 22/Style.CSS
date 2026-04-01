@@ -1,0 +1,34 @@
+/* ❌ Ye galat hai:
+ul {
+    marker: url(image.png);
+}
+👉 Reason: CSS me "marker" naam ki koi valid property nahi hoti
+*/
+
+/* ============================= */
+
+/* ✅ Emoji bullet lagane ka best tarika */
+
+ul {
+    list-style: none;       /* default bullets hata diye */
+    padding-left: 0;        /* left spacing reset */
+}
+
+ul li {
+    position: relative;     /* taaki ::before ko position kar sake */
+    padding-left: 25px;     /* emoji ke liye space */
+}
+
+ul li::before {
+    content: "🔥";          /* 👉 yahan apna emoji lagao */
+    position: absolute;
+    left: 0;                /* left side pe emoji */
+}
+
+/* ============================= */
+
+/* 💡 Notes:
+1. "content" me koi bhi emoji use kar sakte ho ("✅", "⭐", "👉", etc.)
+2. Ye method isliye best hai kyunki full control milta hai (size, position, spacing)
+3. list-style-image emoji ke liye kaam nahi karta
+*/
