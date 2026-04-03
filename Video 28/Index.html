@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4th of root element</title>
+</head>
+<body>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: lightblue;
+    }
+    :root{
+        --bcolor:rgb(0, 37, 92);
+        --fcolor:rgb(73, 230, 120);
+        --secolor:rgb(255, 217, 0);
+        --bsecolor:rgb(0,0,0);
+        --defpad:20px;
+        --defop:0.5;
+    }
+    nav{
+        background-color: var(--bcolor);
+    }
+    ul{
+        list-style: none;
+        display: flex;
+    }
+    ul li{
+        padding:var(--defpad);
+        color: var(--fcolor);
+        cursor: pointer;
+    }
+    ul li:hover{
+        background-color:var(--fcolor);
+        border-radius: 30px;
+        color:var(--bcolor);
+    }
+    .card{
+        margin: 40px 400px;
+        background-color: var(--fcolor);
+        width: 533px;
+        /* height: 444px; */
+        border: 2px solid gray;
+        border-radius: 23px;
+        /* overflow:hidden; */
+    }
+    .card h1{
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: var(--bcolor);
+        background-color: var(--secolor);
+        border: 2px solid var(--bcolor);
+        border-radius: 90px;
+        box-shadow: 1px 9px mediumseagreen;;
+
+    }
+    .card h1:hover{
+        background-color: var(--bcolor);
+        color: var(--secolor);
+    }
+    .card p{
+        color: var(--bcolor);
+        font-style: italic;
+        margin-top:18px;
+        padding: 15px;
+    }
+
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="card">
+        <h1>Bhopinder Jogi</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officia in nostrum dolor minus veritatis. Officia dolor voluptate velit eaque in reprehenderit facilis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae eum deleniti quam labore veniam consequuntur commodi facere impedit nemo laudantium omnis porro nobis, rerum minus. Nisi voluptate explicabo iste, cumque repellendus beatae at sapiente dolore est voluptas ipsum perferendis inventore distinctio perspiciatis eius labore hic, quam in! Consequatur unde error eligendi sit, tempora impedit quam, cupiditate quo velit dolor suscipit eius perspiciatis dolore earum excepturi maiores odio? Sed, dolor voluptatum facere velit, quidem perspiciatis voluptates nihil, impedit libero adipisci vel commodi animi distinctio eos aut? Debitis blanditiis quia distinctio magnam quas, beatae itaque ullam error eum doloribus! Provident voluptas amet explicabo, velit necessitatibus dolores quas quidem officia non doloribus? Illum neque minima sit quia est aliquam? Modi dolorum ducimus delectus. Numquam quo iste dolor corporis hic non eaque fugiat necessitatibus magni consequatur mollitia quia molestias provident repellat natus rem adipisci placeat aut quasi, impedit libero cumque deserunt quidem! Eius consequatur nam corrupti beatae nihil molestiae quasi tempore totam enim ab quibusdam unde quidem maiores laboriosam dolores laborum at facilis, explicabo dignissimos ut distinctio? Atque qui at sapiente quasi, nam maxime deleniti velit excepturi alias ratione, tempora perspiciatis laboriosam optio vitae natus et eius doloribus nemo commodi quae magnam ab! Harum ut esse facere, numquam mollitia amet, natus sapiente laboriosam distinctio pariatur quae eos ex rerum aspernatur dolorum dolor provident. Animi impedit natus repellendus ad earum, libero corrupti pariatur. Maiores eum consectetur incidunt non.</p>
+    </div>
+</body>
+</html>
+</body>
+</html>
