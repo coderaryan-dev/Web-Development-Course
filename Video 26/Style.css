@@ -1,0 +1,28 @@
+:root {
+    --maincolor: blue;
+    --textcolor: white;
+    --ptcolor: rgb(205, 180, 180);
+    --parcolor: red;
+    --tepad:30px;
+    --lspace: 1px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.Nav {
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    letter-spacing: var(--lspace);
+    padding: 20px;
+    letter-spacing: 1px;
+}
+.Paragraph {
+    padding: var(--tepad);
+    letter-spacing: var(--lspace);
+    color: var(--ptcolor);
+    background-color: var(--parcolor);
+    margin: 20px;
+}
