@@ -1,0 +1,15 @@
+.cards{
+    /* background: linear-gradient(blue,rgb(220, 0, 118),red); */
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    border: 2px solid rgb(255, 0, 0);
+}
+img{
+    clear: left;
+}
+.card:nth-child(2) {
+    float: right;
+}
