@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.parent{
+    padding: 60px;
+    background: linear-gradient(pink,blue,red);
+    margin: 40px;
+    height: 100vh;
+    border: 3px solid purple;
+    position: relative;
+}
+.box{
+    position: relative;
+    height: 40px;
+    border: 2px solid black;
+    padding: 80px;
+    margin: 30px;
+}
+
+.box1{
+    background-color: cyan;
+    position: sticky;
+    top: 0px;
+}
+
+.box2{
+    background-color: yellow;
+    position: fixed;
+    z-index: 12;
+    top: 0px;
+    width: 57vw;
+}
+
+.box3{
+
+    background-color: lightgrey;
+    position: relative;
+}
+
+.box4{
+    background-color: lightgreen;
+    position: relative;
+}
+
+.footer{
+    background-color: black;
+    color: rgb(233, 239, 238);
+    padding: 50px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-thickness: 4px;
+    font-weight: 600;
+}
+
