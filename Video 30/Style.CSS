@@ -1,0 +1,87 @@
+/* 🔹 Universal selector (*)
+   -> Sab elements pe apply hota hai
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 🔹 Body selector
+   -> Pure page ka background + font control karta hai
+*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+/* 🔹 Class selector (.cards)
+   -> Ye parent container hai
+   -> Flexbox use karke cards ko line me laata hai
+*/
+.cards {
+    display: flex;                 /* sab cards ek line me */
+    gap: 20px;                     /* cards ke beech gap */
+    padding: 20px;
+}
+
+
+/* 🔹 Class selector (.card)
+   -> Har ek card ka design */
+.card {
+    background: white;
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+/* 🔹 Element selector (h2)
+   -> Sab headings pe apply hoga */
+h2 {
+    color: blue;
+}
+
+
+/* 🔹 Descendant selector (.card p)
+   -> sirf card ke andar wale paragraph pe apply hoga */
+.card p {
+    color: gray;
+}
+
+
+/* 🔹 Pseudo-class selector (:hover)
+   -> mouse le jaane pe effect */
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+/* 🔹 nth-child selector
+   -> specific position wale element ko target karta hai */
+
+/* 2nd card */
+.card:nth-child(2) {
+    background: lightblue;
+}
+
+/* 3rd card */
+.card:nth-child(3) {
+    background: lightgreen;
+}
+
+
+/* 🔹 First child selector */
+.card:first-child {
+    border-color: red;
+}
+
+
+/* 🔹 Last child selector */
+.card:last-child {
+    border-color: green;
+}
