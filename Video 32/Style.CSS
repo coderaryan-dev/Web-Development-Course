@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Container {
+    height: 80vh;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+.Items {
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    border: 2px solid black;
+}
+
+.order1 {
+    flex-shrink: 10;
+    flex-grow: 0.3;
+    text-align: center;
+    order: 1;
+    background-color: pink;
+    color: blue;
+}
