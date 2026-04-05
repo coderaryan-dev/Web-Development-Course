@@ -1,0 +1,36 @@
+.Container {
+    border: 2px solid black;
+    height: 40vh;
+    display: grid;
+    grid-template-areas: "nav  nav nav"
+        "main article article"
+        "footer footer footer";
+
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+.Items {
+    /* height: 40px; */
+    border: 2px solid black;
+    /* width: 40px; */
+    background-color: blue;
+    color: white;
+}
+
+.Items1 {
+    grid-area: nav;
+    background-color: rgb(214, 106, 178);
+}
+.Items2{
+    grid-area: main;
+    background-color: rgb(180, 180, 255);
+}
+.Items3 {
+    grid-area: article;
+    background-color: rgb(255, 202, 132);
+}
+.Items4{
+    grid-area: nav;
+    background-color: rgb(255, 120, 120);
+}
