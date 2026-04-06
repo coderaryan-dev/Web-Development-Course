@@ -44,8 +44,16 @@
 }
 
 img {
-    width: 200px;
+    width: 180px;
 }
+img:hover{
+    width: 150px;
+    transition: 0.4s;
+    background-color: #d6d6d6;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
 
 ul{
     gap: 40px;
