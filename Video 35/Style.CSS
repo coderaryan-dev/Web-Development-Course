@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.Container {
+    width: 100vw;
+    height: 80vh;
+    border: 2px solid blueviolet;
+}
+
+.box {
+    /* transform: scale(1.2); */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(136, 132, 255);
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+}
+
+.box:hover {
+    /* cursor: pointer;
+    transform: translateY(80px)
+               translateX(80px); */
+    /* transform: matrix(1.3, 0.2, 0.3, 1.2, 80, 80); */
+    /* transform: matrix(1.3, 1, 1 ,1.2, 80, 80); */
+    /* transform: scale(1); */
+    /* transform: matrix(1.5, 0, 0, 1.5, 50, 50); */
+    /* transform: rotate(360deg); */
+    /* transform: scale(1.5); */
+    transform: rotate3d(5, 4, 6, 360deg);
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.3s;
+}
