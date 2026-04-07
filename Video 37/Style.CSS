@@ -1,0 +1,23 @@
+.container{
+    background-color: antiquewhite;
+    width: 80vw;
+    height: 50vh;
+    
+}
+.box{
+    transition: transform 2s cubic-bezier(0.02, 1.39, 1, 3.94) 1s;
+    background-color: aqua;
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.translate{
+    transform: translateX(15vw)
+               translateY(15vh);
+               background-color: rgb(255, 0, 0);
+}
