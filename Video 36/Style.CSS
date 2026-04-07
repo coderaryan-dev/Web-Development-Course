@@ -127,7 +127,13 @@ button:active {
     width: 80%;
     margin: auto;
 }
-
+.items:active{
+    transform: scale(0.95);
+}
+::selection{
+    background-color: black;
+    color: rgb(248, 0, 0);
+}
 .items {
     border: 1px solid #ccc;
     padding: 20px;
@@ -205,7 +211,21 @@ button:active {
     position: relative;
     bottom: 8px;
 }
+.Am{
+    top: 20px;
+    position: relative;
+}
+footer,.footer{
+    background-color: black;
+    font-size: 20px;
 
+    color: white;
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 @media (max-width: 768px) {
 
     .Container {
@@ -260,5 +280,108 @@ button:active {
 
     .Container {
         gap: 20px;
+    }
+}
+/* ===== MOBILE FIRST APPROACH ===== */
+
+.Container {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* NAV FIX */
+.nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* BUTTON STACK */
+.button {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* LOGO SECTION */
+.logo2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+/* GRID RESPONSIVE (BEST PART 🔥) */
+.download {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 95%;
+    gap: 20px;
+}
+
+/* CARDS FIX */
+.items {
+    width: 100%;
+    height: auto;
+    padding: 20px 15px;
+}
+
+/* IMAGE RESPONSIVE */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* TEXT FIX */
+.head p {
+    font-size: 14px;
+}
+
+/* FOOTER FIX */
+footer, .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 600px) {
+
+    .download {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .head p {
+        font-size: 16px;
+    }
+}
+
+/* ===== LAPTOP ===== */
+@media (min-width: 992px) {
+
+    .Container {
+        flex-wrap: nowrap;
+    }
+
+    .download {
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+    }
+
+    .head p {
+        font-size: 18px;
+    }
+}
+
+/* ===== EXTRA SMALL DEVICES ===== */
+@media (max-width: 400px) {
+
+    .head p {
+        font-size: 12px;
+    }
+
+    .btn {
+        width: 100%;
     }
 }
