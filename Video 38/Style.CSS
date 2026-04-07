@@ -1,0 +1,26 @@
+.container {
+    background-color: rgb(49, 255, 121);
+    width: 80vw;
+    height: 60vh;
+    color: white;
+}
+
+.box {
+    background-color: blueviolet;
+    width: 6vw;
+    height: 3vw;
+    animation: Aryan 1s ease-in-out 1s infinite alternate-reverse;
+}
+
+@keyframes Aryan {
+    from {
+        text-decoration: underline;
+    }
+
+    to {
+        scale: 2;
+        background-color: black;
+        transform: translateX(25vw) translateY(25vh);
+        border-radius: 40px;
+    }
+}
