@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 - Bounce Animation | Aryan Singh</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .Container {
+        background-color: rgb(9, 106, 106);
+        width: 90vw;
+        height: 90vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .Box {
+        background-color: rgb(255, 108, 108);
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        animation: Ball-animation 3s linear infinite,
+            Ball-Color 3s linear infinite;
+    }
+
+    @keyframes Ball-animation {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        25% {
+            transform: translate(20vw, -80vh);
+        }
+
+        50% {
+            transform: translate(40vw, 0);
+        }
+
+        75% {
+            transform: translate(60vw, -60vh);
+        }
+
+
+        100% {
+            transform: translate(80vw, 0vh);
+        }
+    }
+
+    @keyframes Ball-Color {
+        0% {
+            background: linear-gradient(pink, blue, rgb(197, 255, 25));
+        }
+
+        25% {
+            background: linear-gradient(aqua, yellow);
+        }
+
+        50% {
+            background: linear-gradient(grey, rgb(255, 2, 44), white);
+        }
+
+        75% {
+            background: linear-gradient(blueviolet, gold);
+        }
+
+        100% {
+            background: linear-gradient(rgb(0, 255, 17), rgb(0, 255, 208), rgb(255, 147, 147));
+        }
+    }
+</style>
+
+<body>
+    <div class="Container">
+        <div class="Box"></div>
+    </div>
+</body>
+
+</html>
