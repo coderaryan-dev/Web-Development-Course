@@ -1,12 +1,21 @@
+*{
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 .container{
     display: flex;
 }
+
 img{
     width: 300px;
     padding: 40px;
     margin: 30px;
     object-fit: cover;
+     -webkit-user-drag: none;
+    user-drag: none;
 }
+
 .img1{
     filter: blur(2px);
 }
