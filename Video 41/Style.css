@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+}
+img{
+    width: 300px;
+    padding: 40px;
+    margin: 30px;
+    object-fit: cover;
+}
+.img1{
+    filter: blur(2px);
+}
+.img2{
+/* filter: brightness(2); */
+    filter: sepia(1);
+}
+.img3{
+    /* filter: grayscale(10); */
+    /* filter: contrast(2); */
+    /* filter: invert(2); */
+    filter: drop-shadow(16px 16px 16px rgb(0, 0, 0));
+}
